@@ -1,12 +1,20 @@
 import React,{Component} from 'react';
-// import Homepage from './HomePage';
+import Homepage from './HomePage';
 import SignUp from './SignUp';
 import Login from './Login';
-
+import AppNajdawe from'../Najdawe/AppNajdawe'
+import AppMomani from'../Momani/AppMomani'
+import Post from'../Momani/Post'
+import AppTamimi from'../AppFood/AppTamimi'
+import AppYoutube from'../AppYoutube/AppYoutube'
+import Tips from '../Najdawe/Tips';
+import OverWeight from '../Najdawe/Overweight';
+import Normal from '../Najdawe/Normal';
+import Obese from '../Najdawe/Obese';
 import axios from 'axios';
 import {BrowserRouter as Router,  Route,Link } from 'react-router-dom'
 
-// import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 export default class App extends Component{
@@ -46,18 +54,19 @@ export default class App extends Component{
       axios.post(`http://localhost:9000/Roaa/login`,input)
       .then(res=>{
         console.log(res.data)
-        this.setState
-        ({ datalogin:res.data})
+        this.setState({datalogin:res.data})
       })
       
-    //     // .then( ()=>{
-    //       if(this.state.datalogin.length>0)
-    //       {
-    //       window.location='/Homepage'
-    //     }
+        .then( ()=>{
+          if(this.state.datalogin.length>0)
+          {
+          window.location='/Homepage'
+        }
+        else
+    window.location='/SignUp'
       
-    //   }
-    //     )
+      }
+        )
        
      
     }
@@ -69,17 +78,24 @@ export default class App extends Component{
   render(){
   return (
     <>
-     {/* <Login   Login={this.Login}/>  */}
+    
     <Router>
-    {/* <Route path="/HomePage"  component={()=><Homepage/>} /> */}
+    <Route path="/" exact component={()=><Login Login={this.Login}/>} />
+    <Route path="/HomePage"  component={()=><Homepage/>} />
   <Route path="/Login"  component={()=> <Login Login={this.Login}/>} />
   <Route path="/SignUp" component={()=> <SignUp SignUp={this.SignUp} /> }/>
+  <Route path="/weigth" component={()=> <AppNajdawe/> }/>
+  <Route path="/diet" component={()=> <AppMomani/> }/>
+  <Route path="/post" component={()=> <Post/> }/>
+  <Route path="/food" component={()=> <AppTamimi/> }/>
+  <Route path="/video" component={()=> <AppYoutube/> }/>
+  <Route path="/tips" component={Tips} />
+   <Route path="/overweight" component={OverWeight}/>
+    <Route path="/normal" component={Normal}/>
+    <Route path="/obese" component={Obese}/>
+        
   </Router>
-  {/* <Route path="/food" component={Food}/>
-  <Route path="/sport" component={Sport}/>
-  <Route path="/wieght" component={Weight}/>
-  <Route path="/dite" component={Dite}/>
-  <Route path="/commnaction" component={Commcation}/> */}
+ 
     </>
   );
   

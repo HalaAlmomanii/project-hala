@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import Weight from './Weight';
+import NavBar from '../Roaa/NavBar';
+import Footer from '../Roaa/Footer';
 class Tips extends Component {
   state = {
     hide: false
@@ -6,6 +9,7 @@ class Tips extends Component {
   render(){
       return(
           <>
+          <NavBar/>
   <div
         className="w3-modal-content w3-card-4 w3-animate-zoom" 
         style={{ display: this.state.hide ? 'none' : 'block',  width: "70%", position: 'absolute', top: '20%', left: '10%' }}>
@@ -39,6 +43,8 @@ class Tips extends Component {
           </footer>
         </div>
       </div>
+      <Weight/>
+      <Footer/>
           </>
       )
   }

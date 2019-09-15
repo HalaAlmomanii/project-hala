@@ -79,7 +79,7 @@ class Item extends Component {
 
 
 <div className="container">
- {this.state.counter<5&&<button type="button"  onClick={this.flag} className="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal"style={{margin:"10px 1020px", fontFamily:"Amaranth"}}>Report</button>}
+ {this.state.counter<5&&<button type="button"  onClick={this.flag} className="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal"style={{margin:"10px 900px", fontFamily:"Amaranth"}}>Report</button>}
  <div className="modal fade" id="myModal" role="dialog">
    <div className="modal-dialog">
    

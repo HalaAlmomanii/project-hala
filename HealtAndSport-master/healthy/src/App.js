@@ -6,8 +6,8 @@ import AppNajdawe from "./componenet/Najdawe/AppNajdawe";
 import './App.css';
 // import Navbar from './componenet/Roaa/Navbar';
 // import AppTamimi from './componenet/AppFood/AppTamimi'
-// import AppRoaa from './componenet/Roaa/AppRoaa';
-// import Login from './componenet/Roaa/Login';
+import AppRoaa from './componenet/Roaa/AppRoaa';
+import Login from './componenet/Roaa/Login';
 
 function App() {
   return (
@@ -16,9 +16,9 @@ function App() {
        {/* <AppYoutube/>  */}
       {/* <Post/>  */}
       {/* <AppMomani/>  */}
-       <AppNajdawe/>
+       {/* <AppNajdawe/> */}
        {/* <AppTamimi/> */}
-       {/* <AppRoaa/> */}
+       <AppRoaa/>
        {/* <Login/> */}
     </div>
   );

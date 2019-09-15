@@ -4,7 +4,6 @@ var router= express.Router()
 
 const Roaa = require("../database/Roaa");
 
-
 router.get("/id",(req,res)=>{
 
     res.json("This is Roaa server")
@@ -15,13 +14,10 @@ router.post('/Sign/:email/:password/:name',(req,res)=>{
    let  name =req.params.name
    let  email =req.params.email
    let  password=req.params.password
-//     console.log(name)
-//     console.log(email)
-    // console.log(password)
     Roaa.signup(email,password,name,(result)=>{
   res.json(result)
     } )
-    // res.json('the server')
+   
 })
 
 router.post('/login',(req,res)=>{

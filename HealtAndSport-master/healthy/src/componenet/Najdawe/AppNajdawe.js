@@ -1,9 +1,9 @@
 import React from 'react';
-import Tips from './Tips';
-import OverWeight from './Overweight';
+// import Tips from './Tips';
+// import OverWeight from './Overweight';
 import Weight from './Weight';
-import Normal from './Normal';
-import Obese from './Obese';
+// import Normal from './Normal';
+// import Obese from './Obese';
 import NavBar from '../Roaa/NavBar';
 import Footer from '../Roaa/Footer';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
@@ -12,12 +12,12 @@ function Hala() {
     <div className="App">
       <NavBar/>
       <Weight/>
-      <Router >
+      {/* <Router >
         <Route path="/tips" component={Tips} />
         <Route path="/overweight" component={OverWeight}/>
         <Route path="/normal" component={Normal}/>
         <Route path="/obese" component={Obese}/>
-        </Router>
+        </Router> */}
         <Footer/>
     </div>
 

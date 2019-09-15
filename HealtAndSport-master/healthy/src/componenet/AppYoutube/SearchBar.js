@@ -29,7 +29,7 @@ export class SearchBar extends Component {
 
 
 
-                    style={{ width: "400px",height:"35px", display: "inline", border: "2px green  solid", borderRadius: '2px', borderRadius:"5px",fontFamily:"Amaranth" ,color:"white"}}
+                    style={{ width: "400px",height:"35px", display: "inline", border: "2px green  solid", borderRadius: '2px', borderRadius:"5px",fontFamily:"Amaranth" ,color:"black"}}
 
                     type="text"
 

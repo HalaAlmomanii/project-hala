@@ -46,7 +46,7 @@ class AppMomani extends Component {
         <div style={{ paddingTop: "104px" , fontFamily:"Amaranth"}}>
           <div style={{ margin: "-80" }}>
             <select id="Hala" style={{  height: "38px", paddingRight: "80px" }} defaultValue="" className="  btn btn-outline-success" onClick={this.category.bind(this)} >
-              <option value="" disabled hidden>Diet Categtoy</option>
+              <option value="" disabled hidden>Diet Category</option>
               <option value="Gaining Lean Muscle" > Gaining Lean Muscle</option>
               <option value="Lose Weight"   >Lose Weight</option>
               <option value="Gain Weight">Gain Weight</option>

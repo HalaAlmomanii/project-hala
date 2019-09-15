@@ -7,6 +7,7 @@ const Roaa=require("./Server/Roaa")
 const Najdawi=require("./Server/Najdawi")
 const Momani=require("./Server/Momani")
 
+app.use(express.json());
 
 app.use(cors());
 app.use("/Tamimi",Tamimi);

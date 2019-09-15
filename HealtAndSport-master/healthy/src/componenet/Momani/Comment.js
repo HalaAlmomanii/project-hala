@@ -9,7 +9,7 @@ class Comment extends Component{
           
         <>
     
-       <div> <hr></hr> <br></br> {this.props.elem}</div>
+       <div> <hr></hr> {this.props.elem}</div>
         
           </>
         );

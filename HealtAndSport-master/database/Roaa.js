@@ -15,7 +15,7 @@ let init = () => {
     },(err,data)=>{
       if(data){
         callback(data)
-        console.log("c",data)
+        console.log(data)
       }
       else
       {
