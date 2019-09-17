@@ -13,6 +13,7 @@ class AppMomani extends Component {
   category = (e) => {
     console.log(e.target.value)
     this.setState({ Name: e.target.value })
+    
   }
 
   diet = () => {
@@ -58,7 +59,7 @@ class AppMomani extends Component {
             {this.state.tips.length > 0 && this.state.Url.length === 0 && <img style={{ width: "50px", height: "50px", position: "relative", left: "-320px", bottom: "-50px" }} src={require('../Assets/lunch-box.svg')}></img>}
             {this.state.tips.length > 0 && this.state.Url.length === 0 && <h1 style={{ paddingTop: "-10px", color: "green" }} >Tips For Stick With Healthy Diet</h1>}
             {this.state.tips.length > 0 && this.state.Url.length === 0 && this.state.tips.map((elem, i) => <Tips tip={elem} key={i} />)}
-            {this.state.Url.length > 0 && < DietTable table={this.state.Url} title={this.state.Name} />}
+            {this.state.Url.length > 0 && this.state.Name.length>0 && < DietTable table={this.state.Url} title={this.state.Name} />}
           </div>
 
         </div>

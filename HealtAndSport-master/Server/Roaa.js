@@ -22,7 +22,7 @@ router.post('/Sign/:email/:password/:name',(req,res)=>{
 
 router.post('/login',(req,res)=>{
     let  input = req.body
-    console.log("ServerLogin",req.body)
+    console.log("ServerLogin",input)
   
     Roaa.login(input,(result)=>{
         res.json(result)

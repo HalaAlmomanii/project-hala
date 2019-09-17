@@ -7,7 +7,7 @@ export default class SignUp extends Component{
       email:'',
       password:'',
       validation: {
-        name: /^[a-zA-Z]{3,}$/,
+        name: /^[a-zA-Z]{1,}$/,
         email:/^([a-zA-Z0-9]+)@([a-zA-Z0-9]+)\.([a-zA-Z]{2,5})$/,
         password: /^[a-zA-Z0-9]{5,15}$/,
        
@@ -47,7 +47,7 @@ export default class SignUp extends Component{
   </div>
   <div className="form-group">
     <label style={{color:"green",display:"block" ,fontFamily:' Amaranth',width:"200px"}}>Name:</label>
-    <input type="text" className="form-control" pattern="[A-Za-z]{3}" title=" at least Three letter"  name="name" placeholder="name" onChange={this.SignUp}/>
+    <input type="text" className="form-control" id="exampleInputName"  name="name" placeholder="name" onChange={this.SignUp}/>
   </div>
  
   <button  onClick={

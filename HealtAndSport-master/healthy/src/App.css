@@ -8,8 +8,9 @@
     
   } */
 #log{
-  background-image: url(../src/Assets/yarb2.jpg);
- 
+  background-image: url(../src/Assets/yy.jpg);
+ background-repeat: no-repeat;
+background-size: cover
  
 }
 .App-logo {

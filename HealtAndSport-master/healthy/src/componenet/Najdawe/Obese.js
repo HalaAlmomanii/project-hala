@@ -27,6 +27,7 @@ class Obese extends Component {
           <div className="w3-container" style={{ fontFamily: 'Amaranth' }}>
             <p>Obesity is usually treated with lifestyle changes, including this advice diet and exercise.</p>
           <ul>
+           
                 <li>Dietary changes</li>
                 <li>Avoid crash-dieting</li>
                 <li>Physical activity</li>

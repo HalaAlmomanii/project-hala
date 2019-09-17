@@ -110,7 +110,7 @@ addcomment=(comment,id,cb)=>{
 
 
 let MyDiet=()=>{ 
-  Creatediet("https://papayodivers.com/wp-content/uploads/2019/03/56f092d964a39d133941bfb48811495f.jpg", "Gaining Lean Muscle")
+  Creatediet("https://i.pinimg.com/originals/0f/de/15/0fde15f4c8bca289e4899768d340c015.jpg", "Gaining Lean Muscle")
   Creatediet("https://i.pinimg.com/736x/e1/9e/9b/e19e9beb6fc5254fcc2fbe36dc173da7.jpg","Lose Weight")
   Creatediet("https://www.bbcgoodfood.com/sites/default/files/editor_files/2018/12/hdp-jan-2019-meat-menu-chart-700.jpg","Gain Weight")
 }
