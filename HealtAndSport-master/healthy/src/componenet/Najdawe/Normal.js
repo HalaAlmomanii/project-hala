@@ -23,13 +23,13 @@ class Normal extends Component {
             <h1 style={{ fontFamily: 'Amaranth' }}>Normal Weight</h1>
           </header>
 
-          <div className="w3-container" style={{ fontFamily: 'Amaranth' }}>
+          <div className="w3-container" style={{ fontFamily: 'Amaranth',textAlign:"left" }}>
             <p>Normal Weight</p>
           <ul>
-                <li>Eat three to five meals a day</li>
-                <li>Weight training</li>
-                <li>Eat enough protein</li>
-                <li>Eat meals with fibrous carbohydrates and healthful fats</li>
+                <li>Eat three to five meals a day</li><br/>
+                <li>Weight training</li><br/>
+                <li>Eat enough protein</li><br/>
+                <li>Eat meals with fibrous carbohydrates and healthful fats</li><br/>
            
               </ul>
             

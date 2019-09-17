@@ -24,15 +24,15 @@ class Obese extends Component {
             <h1 style={{ fontFamily: 'Amaranth' }}>Obese</h1>
           </header>
 
-          <div className="w3-container" style={{ fontFamily: 'Amaranth' }}>
+          <div className="w3-container" style={{ fontFamily: 'Amaranth',textAlign:"left" }}>
             <p>Obesity is usually treated with lifestyle changes, including this advice diet and exercise.</p>
-          <ul>
+          <ul style={{ fontFamily: 'Amaranth',textAlign:"left" }}>
            
-                <li>Dietary changes</li>
-                <li>Avoid crash-dieting</li>
-                <li>Physical activity</li>
-                <li>Weight-loss medications</li>
-                <li>Surgery</li>
+                <li>Dietary changes</li><br/>
+                <li>Avoid crash-dieting</li><br/>
+                <li>Physical activity</li><br/>
+                <li>Weight-loss medications</li><br/>
+                <li>Surgery</li><br/>
               </ul>
             
           </div>

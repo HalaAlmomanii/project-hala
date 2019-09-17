@@ -39,7 +39,7 @@ export class Video extends Component {
 
                                     <p className = "text-center mb-4 descrip_vide">
                                      
-                                     {this.props.vid.snippet.description}
+                                     {this.props.vid.snippet.description.slice(0,50)}
                                      
                                      </p>
                     </div>

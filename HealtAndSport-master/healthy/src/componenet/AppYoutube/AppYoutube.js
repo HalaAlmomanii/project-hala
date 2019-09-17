@@ -16,11 +16,11 @@ export class AppTamimi extends Component {
 
     find=(title)=>{
     // console.log(title.length)
-        
+        let t=`${title} "workout exercies"`
     if(title.length>0){
 
         axios.get(
-            `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=6&q=${title}
+            `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=6&q=${t}
             &type=video&key=AIzaSyBdVut9QCzqAHBzfDEh30yUp4E529som6s
         `           )
     

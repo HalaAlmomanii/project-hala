@@ -29,6 +29,7 @@ export default class App extends Component{
     console.log(password)
     axios.post(`http://localhost:9000/Roaa/Sign/${email}/${password}/${name}`)
     .then(res=>{
+      console.log(res)
      this.setState({
        datasign:[res.data]
      })
